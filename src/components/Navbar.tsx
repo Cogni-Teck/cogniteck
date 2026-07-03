@@ -49,7 +49,7 @@ export default function Navbar() {
             alt="Cogniteck Logo"
             className="w-8 h-8 md:w-9 md:h-9 rounded-full object-cover border border-primary/50 shadow-[0_0_10px_rgba(1,195,142,0.2)]"
           />
-          <span className="text-xl md:text-headline-md font-black tracking-widest text-primary uppercase font-sans">
+          <span className="text-xl md:text-headline-md font-black tracking-widest text-on-surface uppercase font-sans">
             Cogniteck
           </span>
         </div>

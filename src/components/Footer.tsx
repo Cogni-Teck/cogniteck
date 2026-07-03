@@ -12,7 +12,7 @@ export default function Footer() {
               alt="Cogniteck Logo"
               className="w-8 h-8 rounded-full object-cover border border-outline"
             />
-            <span className="text-headline-md font-extrabold text-primary font-sans tracking-tight">
+            <span className="text-headline-md font-extrabold text-on-surface font-sans tracking-tight">
               Cogniteck
             </span>
           </div>
@@ -23,7 +23,7 @@ export default function Footer() {
 
         {/* Links */}
         <div className="flex flex-col gap-sm">
-          <p className="text-label-sm uppercase tracking-wider text-secondary font-bold font-sans">
+          <p className="text-label-sm uppercase tracking-wider text-on-surface-variant font-bold font-sans">
             Navegación
           </p>
           <nav className="flex flex-col gap-xs font-sans">

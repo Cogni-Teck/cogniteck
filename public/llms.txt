@@ -1,22 +1,22 @@
-# CogniTeck - Boutique Software Engineering
+# [CogniTeck - Boutique Software Engineering](https://cogniteck.com/)
 
 CogniTeck is an agile software engineering agency of 3 experienced full-stack developers building high-performance custom web applications, SaaS products, and business automation systems.
 
 ## Services
-- Landing Pages: High-conversion layouts with direct WhatsApp integrations.
-- Corporate Websites: Professional presentation sites optimized for SEO.
-- Custom Systems: Custom databases, operations management, and business portals.
-- Process Automation: API connections and workflow automation (Make, Zapier, Bots).
-- Custom SaaS: Multi-tenant subscription cloud applications.
-- Support & Care: Continuous WhatsApp support, backups, and cloud monitoring.
+- [Landing Pages](https://cogniteck.com/#services): High-conversion layouts with direct [WhatsApp Integrations](https://wa.me/519891216130).
+- [Corporate Websites](https://cogniteck.com/#services): Professional presentation sites optimized for [SEO](https://cogniteck.com/).
+- [Custom Systems](https://cogniteck.com/#services): Custom databases, operations management, and business portals.
+- [Process Automation](https://cogniteck.com/#services): API connections and workflow automation (Make, Zapier, Bots).
+- [Custom SaaS](https://cogniteck.com/#services): Multi-tenant subscription cloud applications.
+- [Support & Care](https://cogniteck.com/#services): Continuous [WhatsApp Support](https://wa.me/519891216130), backups, and cloud monitoring.
 
 ## Tech Stack
-- Frontend: Next.js (React), Tailwind CSS
-- Languages: TypeScript, JavaScript
-- Backend & DB: PostgreSQL, Node.js, secure REST APIs
-- Integrations: WhatsApp API, payment gateways (Stripe), local billing (SUNAT)
+- Frontend: [Next.js (React)](https://cogniteck.com/), [Tailwind CSS](https://cogniteck.com/)
+- Languages: [TypeScript](https://cogniteck.com/), [JavaScript](https://cogniteck.com/)
+- Backend & DB: [PostgreSQL](https://cogniteck.com/), Node.js, secure REST APIs
+- Integrations: [WhatsApp API](https://wa.me/519891216130), payment gateways (Stripe), local billing (SUNAT)
 
 ## Contact & Estimations
-- Official Site: https://cogniteck.com/
-- Project Estimations Form: https://cogniteck.com/#contact
-- Support WhatsApp: +51 989 121 6130
+- [Official Site](https://cogniteck.com/)
+- [Project Estimations Form](https://cogniteck.com/#contact)
+- [Support WhatsApp](https://wa.me/519891216130)

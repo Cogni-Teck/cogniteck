@@ -305,7 +305,7 @@ export default function Hero() {
       {/* Infinite Scrolling Ribbon */}
       <div className="w-full bg-surface border-y border-outline py-4.5 overflow-hidden z-10 select-none backdrop-blur-sm">
         <div className="marquee-track">
-          <div className="flex items-center gap-16 px-8 text-on-surface-variant/70 text-xs font-mono tracking-widest uppercase whitespace-nowrap">
+          <div className="flex items-center gap-16 px-8 text-on-surface text-xs font-mono font-semibold tracking-widest uppercase whitespace-nowrap">
             <span>Software a Medida</span> <span>•</span>
             <span>Landing Pages Premium</span> <span>•</span>
             <span>SaaS Core en Desarrollo</span> <span>•</span>
@@ -316,7 +316,7 @@ export default function Hero() {
             <span>Automatizaciones de Procesos</span> <span>•</span>
             <span>Infraestructura Cloud</span> <span>•</span>
           </div>
-          <div className="flex items-center gap-16 px-8 text-on-surface-variant/70 text-xs font-mono tracking-widest uppercase whitespace-nowrap" aria-hidden="true">
+          <div className="flex items-center gap-16 px-8 text-on-surface text-xs font-mono font-semibold tracking-widest uppercase whitespace-nowrap" aria-hidden="true">
             <span>Software a Medida</span> <span>•</span>
             <span>Landing Pages Premium</span> <span>•</span>
             <span>SaaS Core en Desarrollo</span> <span>•</span>
