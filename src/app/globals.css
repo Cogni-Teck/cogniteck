@@ -4,50 +4,50 @@
   --color-inverse-primary: #132d46;
   --color-secondary: #01c38e;
   --color-on-error: #ffffff;
-  --color-surface-container-lowest: #ffffff;
-  --color-on-tertiary-fixed-variant: #576f8a;
-  --color-surface-container: #ffffff; /* Crisp white cards */
-  --color-surface-container-low: #f8fafc; /* Soft off-white page background */
-  --color-background-custom: #f8fafc; /* Page Background */
-  --color-surface-dim: #f1f5f9;
-  --color-on-tertiary-fixed: #132d46;
+  --color-surface-container-lowest: var(--color-surface);
+  --color-on-tertiary-fixed-variant: var(--color-on-surface-variant);
+  --color-surface-container: var(--color-surface);
+  --color-surface-container-low: var(--color-background-custom);
+  --color-background-custom: var(--color-bg-val);
+  --color-surface-dim: var(--color-surface-dim-val);
+  --color-on-tertiary-fixed: var(--color-on-surface);
   --color-error-container: #fee2e2;
   --color-primary: #01c38e; /* Sborg Mint Green */
-  --color-on-secondary-container: #132d46;
+  --color-on-secondary-container: var(--color-on-surface);
   --color-secondary-fixed-dim: #01c38e;
-  --color-surface-variant: #ffffff;
-  --color-tertiary-fixed: #f1f5f9;
+  --color-surface-variant: var(--color-surface);
+  --color-tertiary-fixed: var(--color-surface-dim-val);
   --color-on-error-container: #991b1b;
-  --color-surface-container-highest: #cbd5e1;
-  --color-tertiary-fixed-dim: #94a3b8;
+  --color-surface-container-highest: var(--color-outline);
+  --color-tertiary-fixed-dim: var(--color-outline);
   --color-secondary-fixed: #01c38e;
-  --color-tertiary: #132d46; /* Deep blue as tertiary */
-  --color-on-primary-container: #132d46;
+  --color-tertiary: var(--color-on-surface);
+  --color-on-primary-container: var(--color-on-surface);
   --color-on-secondary: #ffffff;
-  --color-tertiary-container: #ffffff;
-  --color-on-tertiary-container: #576f8a;
-  --color-secondary-container: #ccfbf1;
-  --color-primary-container: #ccfbf1;
-  --color-surface-bright: #ffffff;
-  --color-on-surface: #132d46; /* Deep Blue text */
-  --color-inverse-on-surface: #ffffff;
-  --color-surface-container-high: #f1f5f9;
+  --color-tertiary-container: var(--color-surface);
+  --color-on-tertiary-container: var(--color-on-surface-variant);
+  --color-secondary-container: var(--color-surface);
+  --color-primary-container: var(--color-surface);
+  --color-surface-bright: var(--color-surface);
+  --color-on-surface: var(--color-text-val);
+  --color-inverse-on-surface: var(--color-background-custom);
+  --color-surface-container-high: var(--color-surface-dim-val);
   --color-primary-fixed: #01c38e;
   --color-error: #ef4444;
-  --color-surface: #ffffff;
+  --color-surface: var(--color-surface-val);
   --color-surface-tint: #01c38e;
-  --color-on-secondary-fixed: #132d46;
-  --color-on-primary-fixed-variant: #132d46;
-  --color-on-background: #132d46;
-  --color-on-tertiary: #ffffff;
-  --color-on-primary-fixed: #132d46;
-  --color-outline: #e2e8f0; /* Soft slate border */
-  --color-inverse-surface: #132d46;
-  --color-outline-variant: #f1f5f9;
+  --color-on-secondary-fixed: var(--color-on-surface);
+  --color-on-primary-fixed-variant: var(--color-on-surface);
+  --color-on-background: var(--color-on-surface);
+  --color-on-tertiary: var(--color-background-custom);
+  --color-on-primary-fixed: var(--color-on-surface);
+  --color-outline: var(--color-outline-val);
+  --color-inverse-surface: var(--color-on-surface);
+  --color-outline-variant: var(--color-surface-dim-val);
   --color-primary-fixed-dim: #01c38e;
-  --color-on-primary: #132d46; /* Deep blue text on mint green background */
-  --color-on-surface-variant: #576f8a; /* Slate blue-gray text */
-  --color-on-secondary-fixed-variant: #132d46;
+  --color-on-primary: var(--color-on-primary-val);
+  --color-on-surface-variant: var(--color-text-variant-val);
+  --color-on-secondary-fixed-variant: var(--color-on-surface);
 
   --spacing-margin-mobile: 20px;
   --spacing-sm: 16px;
@@ -66,6 +66,28 @@
   --font-headline-md: var(--font-outfit), var(--font-plus-jakarta-sans);
   --font-label-sm: var(--font-outfit), var(--font-plus-jakarta-sans);
   --font-headline-xl: var(--font-outfit), var(--font-plus-jakarta-sans);
+}
+
+:root {
+  /* Light Mode values */
+  --color-bg-val: #f8fafc;
+  --color-surface-val: #ffffff;
+  --color-surface-dim-val: #f1f5f9;
+  --color-text-val: #132d46;
+  --color-text-variant-val: #576f8a;
+  --color-outline-val: #e2e8f0;
+  --color-on-primary-val: #132d46;
+}
+
+html.dark {
+  /* Dark Mode values */
+  --color-bg-val: #1a1e29;
+  --color-surface-val: #132d46;
+  --color-surface-dim-val: #0c0e13;
+  --color-text-val: #ffffff;
+  --color-text-variant-val: #9ca3af;
+  --color-outline-val: #223c52;
+  --color-on-primary-val: #1a1e29;
 }
 
 @utility text-headline-xl {
@@ -119,18 +141,20 @@ body {
   color: var(--color-on-surface);
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-outfit), sans-serif;
   color: var(--color-on-surface);
+  transition: color 0.3s ease;
 }
 
 html {
   scroll-behavior: smooth;
 }
 
-/* Glowing Orb Backgrounds (Subtle warm colors) */
+/* Glowing Orb Backgrounds (Subtle matching Sborg colors) */
 .orb {
   position: absolute;
   border-radius: 50%;
