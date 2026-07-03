@@ -1,53 +1,53 @@
 @import "tailwindcss";
 
 @theme {
-  --color-inverse-primary: #01c38e;
+  --color-inverse-primary: #132d46;
   --color-secondary: #01c38e;
   --color-on-error: #ffffff;
-  --color-surface-container-lowest: #0c0e13;
-  --color-on-tertiary-fixed-variant: #9ca3af;
-  --color-surface-container: #132d46; /* Sborg Medium Dark */
-  --color-surface-container-low: #1a1e29;
-  --color-background-custom: #1a1e29; /* Sborg Main Dark Background */
-  --color-surface-dim: #132d46;
-  --color-on-tertiary-fixed: #ffffff;
+  --color-surface-container-lowest: #ffffff;
+  --color-on-tertiary-fixed-variant: #576f8a;
+  --color-surface-container: #ffffff; /* Crisp white cards */
+  --color-surface-container-low: #f8fafc; /* Soft off-white page background */
+  --color-background-custom: #f8fafc; /* Page Background */
+  --color-surface-dim: #f1f5f9;
+  --color-on-tertiary-fixed: #132d46;
   --color-error-container: #fee2e2;
   --color-primary: #01c38e; /* Sborg Mint Green */
-  --color-on-secondary-container: #1a1e29;
+  --color-on-secondary-container: #132d46;
   --color-secondary-fixed-dim: #01c38e;
-  --color-surface-variant: #132d46;
-  --color-tertiary-fixed: #132d46;
+  --color-surface-variant: #ffffff;
+  --color-tertiary-fixed: #f1f5f9;
   --color-on-error-container: #991b1b;
-  --color-surface-container-highest: #1a1e29;
-  --color-tertiary-fixed-dim: #1a1e29;
+  --color-surface-container-highest: #cbd5e1;
+  --color-tertiary-fixed-dim: #94a3b8;
   --color-secondary-fixed: #01c38e;
-  --color-tertiary: #01c38e;
-  --color-on-primary-container: #1a1e29;
-  --color-on-secondary: #1a1e29;
-  --color-tertiary-container: #132d46;
-  --color-on-tertiary-container: #9ca3af;
-  --color-secondary-container: #132d46;
-  --color-primary-container: #132d46;
-  --color-surface-bright: #132d46;
-  --color-on-surface: #ffffff; /* White text for dark mode */
-  --color-inverse-on-surface: #1a1e29;
-  --color-surface-container-high: #132d46;
+  --color-tertiary: #132d46; /* Deep blue as tertiary */
+  --color-on-primary-container: #132d46;
+  --color-on-secondary: #ffffff;
+  --color-tertiary-container: #ffffff;
+  --color-on-tertiary-container: #576f8a;
+  --color-secondary-container: #ccfbf1;
+  --color-primary-container: #ccfbf1;
+  --color-surface-bright: #ffffff;
+  --color-on-surface: #132d46; /* Deep Blue text */
+  --color-inverse-on-surface: #ffffff;
+  --color-surface-container-high: #f1f5f9;
   --color-primary-fixed: #01c38e;
   --color-error: #ef4444;
-  --color-surface: #132d46;
+  --color-surface: #ffffff;
   --color-surface-tint: #01c38e;
-  --color-on-secondary-fixed: #1a1e29;
-  --color-on-primary-fixed-variant: #1a1e29;
-  --color-on-background: #ffffff;
-  --color-on-tertiary: #1a1e29;
-  --color-on-primary-fixed: #1a1e29;
-  --color-outline: #223c52; /* Sborg soft border */
-  --color-inverse-surface: #ffffff;
-  --color-outline-variant: #1a1e29;
+  --color-on-secondary-fixed: #132d46;
+  --color-on-primary-fixed-variant: #132d46;
+  --color-on-background: #132d46;
+  --color-on-tertiary: #ffffff;
+  --color-on-primary-fixed: #132d46;
+  --color-outline: #e2e8f0; /* Soft slate border */
+  --color-inverse-surface: #132d46;
+  --color-outline-variant: #f1f5f9;
   --color-primary-fixed-dim: #01c38e;
-  --color-on-primary: #1a1e29;
-  --color-on-surface-variant: #9ca3af; /* Light gray text */
-  --color-on-secondary-fixed-variant: #1a1e29;
+  --color-on-primary: #132d46; /* Deep blue text on mint green background */
+  --color-on-surface-variant: #576f8a; /* Slate blue-gray text */
+  --color-on-secondary-fixed-variant: #132d46;
 
   --spacing-margin-mobile: 20px;
   --spacing-sm: 16px;
@@ -130,7 +130,7 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Glowing Orb Backgrounds (Subtle matching Sborg colors) */
+/* Glowing Orb Backgrounds (Subtle warm colors) */
 .orb {
   position: absolute;
   border-radius: 50%;
@@ -165,7 +165,7 @@ html {
   }
 }
 
-/* Spotlight Effect using solid Sborg green spotlight */
+/* Spotlight Effect using Sborg green spotlight */
 .card-glow {
   position: relative;
   overflow: hidden;
@@ -177,7 +177,7 @@ html {
   inset: 0;
   background: radial-gradient(
     300px circle at var(--mx, 0px) var(--my, 0px),
-    rgba(1, 195, 142, 0.05), /* Subtle Mint Green glow spotlight */
+    rgba(1, 195, 142, 0.05), /* Subtle Mint Green spotlight */
     transparent 80%
   );
   z-index: 0;
@@ -206,10 +206,10 @@ html {
   }
 }
 
-/* Glassmorphism utility with Sborg slate background */
+/* Glassmorphism utility with white background */
 .glass-panel {
-  background: rgba(19, 45, 70, 0.8);
+  background: rgba(255, 255, 255, 0.85);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(0, 0, 0, 0.04);
 }

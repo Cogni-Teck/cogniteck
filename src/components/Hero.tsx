@@ -196,7 +196,7 @@ export default function Hero() {
             <ScrollReveal className="w-full flex flex-col gap-6 items-center">
               {/* Widget 1: Dev Terminal Widget */}
               <div
-                className="float-card card-glow w-full max-w-[360px] bg-surface border border-outline rounded-2xl p-4 font-mono text-[11px] shadow-[0_8px_30px_rgba(0,0,0,0.15)] self-start ml-2"
+                className="float-card card-glow w-full max-w-[360px] bg-[#0c0e13] border border-outline/30 rounded-2xl p-4 font-mono text-[11px] shadow-[0_8px_30px_rgba(0,0,0,0.06)] self-start ml-2 text-slate-300"
                 style={{ animationDelay: '0s' }}
                 onMouseMove={(e) => {
                   const rect = e.currentTarget.getBoundingClientRect();
@@ -204,19 +204,19 @@ export default function Hero() {
                   e.currentTarget.style.setProperty('--my', `${e.clientY - rect.top}px`);
                 }}
               >
-                <div className="flex items-center justify-between border-b border-outline/40 pb-2 mb-3">
+                <div className="flex items-center justify-between border-b border-outline/35 pb-2 mb-3">
                   <div className="flex gap-1.5">
                     <div className="w-2.5 h-2.5 rounded-full bg-[#ff5f56]"></div>
                     <div className="w-2.5 h-2.5 rounded-full bg-[#ffbd2e]"></div>
                     <div className="w-2.5 h-2.5 rounded-full bg-[#27c93f]"></div>
                   </div>
-                  <span className="text-[9px] text-on-surface-variant/80 select-none">bash - dev-server</span>
+                  <span className="text-[9px] text-slate-500 select-none">bash - dev-server</span>
                 </div>
-                <div className="space-y-1 text-on-surface-variant">
-                  <p className="text-primary font-bold"><span className="text-on-surface/80">cogniteck@terminal:~$</span> npm run build:prod</p>
-                  <p className="text-on-surface-variant/70">&gt; bundling client-side components...</p>
+                <div className="space-y-1 text-slate-400">
+                  <p className="text-primary font-bold"><span className="text-slate-300">cogniteck@terminal:~$</span> npm run build:prod</p>
+                  <p className="text-slate-500">&gt; bundling client-side components...</p>
                   <p className="text-green-400 font-bold font-mono">✓ webpack compiled successfully [Next.js v16]</p>
-                  <p className="text-on-surface-variant/70">&gt; establishing secure PostgreSQL tunnel...</p>
+                  <p className="text-slate-500">&gt; establishing secure PostgreSQL tunnel...</p>
                   <p className="text-primary font-bold">✓ connection live on secure-db-port 5432</p>
                   <p className="text-primary font-bold animate-pulse">➜ active deploy: https://cogniteck-v1.alpha</p>
                 </div>
