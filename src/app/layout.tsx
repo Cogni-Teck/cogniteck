@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import { Plus_Jakarta_Sans, Outfit, Share_Tech_Mono } from "next/font/google";
+import { Inter, Outfit, Share_Tech_Mono } from "next/font/google";
 import "./globals.css";
 
-const plusJakartaSans = Plus_Jakarta_Sans({
-  variable: "--font-plus-jakarta-sans",
+const inter = Inter({
+  variable: "--font-inter",
   subsets: ["latin"],
 });
 
@@ -23,6 +23,10 @@ export const metadata: Metadata = {
   description: "Boutique de desarrollo de software y páginas web a medida. Automatización de procesos y sistemas a medida para optimizar tu negocio.",
   alternates: {
     canonical: "https://cogniteck.com",
+  },
+  icons: {
+    icon: "/logo.jpg",
+    apple: "/logo.jpg",
   },
 };
 
@@ -53,7 +57,7 @@ export default function RootLayout({
   return (
     <html
       lang="es"
-      className={`${plusJakartaSans.variable} ${outfit.variable} ${shareTechMono.variable} h-full antialiased overflow-x-hidden`}
+      className={`${inter.variable} ${outfit.variable} ${shareTechMono.variable} h-full antialiased overflow-x-hidden`}
       suppressHydrationWarning
     >
       <head>

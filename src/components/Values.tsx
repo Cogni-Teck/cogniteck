@@ -55,7 +55,7 @@ export default function Values() {
             <h2 className="text-4xl sm:text-5xl font-black uppercase tracking-wider text-on-surface mt-base mb-sm leading-tight font-sans">
               Un proceso transparente y sin sorpresas
             </h2>
-            <p className="text-body-lg text-on-surface-variant font-sans leading-relaxed font-light">
+            <p className="text-body-lg text-on-surface-variant font-sans leading-relaxed">
               Creemos en las relaciones de confianza y el desarrollo predecible. Siempre sabrás en qué etapa está tu software, qué sigue y cuándo se entrega.
             </p>
           </ScrollReveal>
@@ -101,7 +101,7 @@ export default function Values() {
                       <p className="text-xs font-semibold mb-3 font-sans text-primary/90">
                         {step.subtitle}
                       </p>
-                      <p className="text-sm text-on-surface-variant font-sans font-light leading-relaxed">
+                      <p className="text-sm text-on-surface-variant font-sans leading-relaxed">
                         {step.description}
                       </p>
                     </div>

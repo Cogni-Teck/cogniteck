@@ -33,7 +33,7 @@ export default function About() {
             <h2 className="text-3xl sm:text-4xl md:text-headline-xl mt-base font-extrabold uppercase tracking-wider text-on-surface">
               Personas reales construyendo soluciones reales
             </h2>
-            <p className="text-body-lg text-on-surface-variant mt-sm font-sans font-light">
+            <p className="text-body-lg text-on-surface-variant mt-sm font-sans">
               Somos un equipo pequeño de 3 desarrolladores apasionados por la tecnología práctica. No nos escondemos detrás de capas de ejecutivos o gerentes de cuenta: hablas y trabajas directamente con nosotros.
             </p>
           </ScrollReveal>
@@ -70,7 +70,7 @@ export default function About() {
                       </span>
                     </div>
                   </div>
-                  <p className="text-on-surface-variant font-sans text-sm md:text-body-md leading-relaxed font-light">
+                  <p className="text-on-surface-variant font-sans text-sm md:text-body-md leading-relaxed">
                     {member.desc}
                   </p>
                 </div>

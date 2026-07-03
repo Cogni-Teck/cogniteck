@@ -16,6 +16,7 @@ export default function Cta() {
     'Sistema a Medida',
     'SaaS',
     'Automatización',
+    'Otro'
   ];
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -39,7 +40,7 @@ export default function Cta() {
 
       <div className="max-w-max-width mx-auto px-margin-mobile md:px-gutter relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-xl items-stretch">
-          
+
           {/* Left Column: Premium Pitch & Direct Contact */}
           <div className="lg:col-span-5 flex flex-col justify-between space-y-lg">
             <ScrollReveal className="space-y-md">
@@ -61,9 +62,9 @@ export default function Cta() {
                 {/* Response Time Badge */}
                 <div className="inline-flex items-center gap-2 px-3 py-1 bg-primary/5 border border-primary/20 rounded-full">
                   <div className="w-2.5 h-2.5 rounded-full bg-primary animate-pulse"></div>
-                  <span className="text-[10px] uppercase font-bold tracking-wider text-primary font-mono">
+                  {/* <span className="text-[10px] uppercase font-bold tracking-wider text-primary font-mono">
                     Tiempo de respuesta: &lt; 2 horas
-                  </span>
+                  </span> */}
                 </div>
 
                 {/* Email Contact Card */}
@@ -179,11 +180,10 @@ export default function Cta() {
                               key={option}
                               type="button"
                               onClick={() => setProjectType(option)}
-                              className={`px-4 py-2.5 text-xs font-semibold rounded-xl border font-mono uppercase tracking-wider transition-all duration-300 cursor-pointer ${
-                                isSelected
-                                  ? 'bg-primary border-primary text-on-primary shadow-md shadow-primary/20 scale-[1.02]'
-                                  : 'bg-background-custom border-outline text-on-surface-variant hover:border-primary/50'
-                              }`}
+                              className={`px-4 py-2.5 text-xs font-semibold rounded-xl border font-mono uppercase tracking-wider transition-all duration-300 cursor-pointer ${isSelected
+                                ? 'bg-primary border-primary text-on-primary shadow-md shadow-primary/20 scale-[1.02]'
+                                : 'bg-background-custom border-outline text-on-surface-variant hover:border-primary/50'
+                                }`}
                             >
                               {option}
                             </button>
@@ -212,7 +212,7 @@ export default function Cta() {
                       <span className="text-[11px] text-on-surface-variant font-sans opacity-70">
                         * Todos los campos marcados con asterisco son requeridos.
                       </span>
-                      
+
                       <button
                         type="submit"
                         className="group inline-flex items-center justify-center gap-xs px-8 py-4 bg-primary text-on-primary font-bold text-label-sm uppercase tracking-widest transition-all rounded-xl hover:shadow-[0_4px_15px_rgba(1,195,142,0.3)] hover:scale-[1.02] active:scale-[0.98] w-full sm:w-auto cursor-pointer"

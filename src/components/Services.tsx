@@ -133,7 +133,7 @@ export default function Services() {
               Soluciones prácticas para tu negocio
             </h2>
             <div className="h-0.5 w-16 bg-primary mb-md"></div>
-            <p className="text-body-lg text-on-surface-variant font-sans leading-relaxed max-w-2xl font-light">
+            <p className="text-body-lg text-on-surface-variant font-sans leading-relaxed max-w-2xl">
               No vendemos humo tecnológico ni infraestructura corporativa innecesaria. Creamos herramientas digitales pensadas exclusivamente para que tu negocio funcione mejor y consiga más clientes.
             </p>
           </ScrollReveal>
@@ -185,7 +185,7 @@ export default function Services() {
                     {service.title}
                   </h3>
 
-                  <p className="text-sm text-on-surface-variant font-sans mb-6 leading-relaxed font-light">
+                  <p className="text-sm text-on-surface-variant font-sans mb-6 leading-relaxed">
                     {service.solves}
                   </p>
                 </div>
@@ -197,7 +197,7 @@ export default function Services() {
                   </span>
                   <ul className="space-y-2">
                     {service.bullets.map((bullet, bIdx) => (
-                      <li key={bIdx} className="flex items-start gap-2 text-sm text-on-surface font-sans font-light">
+                      <li key={bIdx} className="flex items-start gap-2 text-sm text-on-surface font-sans">
                         <span className="text-primary font-mono text-[12px] mt-0.5 select-none font-bold group-hover:translate-x-0.5 transition-transform duration-300">&gt;</span>
                         <span className="text-on-surface-variant group-hover:text-on-surface transition-colors duration-300">{bullet}</span>
                       </li>
