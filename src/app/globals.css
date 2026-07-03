@@ -59,18 +59,18 @@
   --spacing-xs: 8px;
   --spacing-md: 24px;
 
-  --font-headline-lg: var(--font-outfit), var(--font-inter);
-  --font-headline-lg-mobile: var(--font-outfit), var(--font-inter);
+  --font-headline-lg: var(--font-space-grotesk), var(--font-inter);
+  --font-headline-lg-mobile: var(--font-space-grotesk), var(--font-inter);
   --font-body-lg: var(--font-inter);
   --font-body-md: var(--font-inter);
-  --font-headline-md: var(--font-outfit), var(--font-inter);
-  --font-label-sm: var(--font-outfit), var(--font-inter);
-  --font-headline-xl: var(--font-outfit), var(--font-inter);
+  --font-headline-md: var(--font-space-grotesk), var(--font-inter);
+  --font-label-sm: var(--font-space-grotesk), var(--font-inter);
+  --font-headline-xl: var(--font-space-grotesk), var(--font-inter);
 }
 
 :root {
   --font-inter: 'Inter', sans-serif;
-  --font-outfit: 'Outfit', sans-serif;
+  --font-space-grotesk: 'Space Grotesk', sans-serif;
   --font-share-tech-mono: 'Share Tech Mono', monospace;
 
   /* Light Mode values */
@@ -150,7 +150,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-outfit), sans-serif;
+  font-family: var(--font-space-grotesk), sans-serif;
   color: var(--color-on-surface);
   transition: color 0.3s ease;
 }
