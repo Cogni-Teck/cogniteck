@@ -1,26 +1,215 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  --color-inverse-primary: #01c38e;
+  --color-secondary: #01c38e;
+  --color-on-error: #ffffff;
+  --color-surface-container-lowest: #0c0e13;
+  --color-on-tertiary-fixed-variant: #9ca3af;
+  --color-surface-container: #132d46; /* Sborg Medium Dark */
+  --color-surface-container-low: #1a1e29;
+  --color-background-custom: #1a1e29; /* Sborg Main Dark Background */
+  --color-surface-dim: #132d46;
+  --color-on-tertiary-fixed: #ffffff;
+  --color-error-container: #fee2e2;
+  --color-primary: #01c38e; /* Sborg Mint Green */
+  --color-on-secondary-container: #1a1e29;
+  --color-secondary-fixed-dim: #01c38e;
+  --color-surface-variant: #132d46;
+  --color-tertiary-fixed: #132d46;
+  --color-on-error-container: #991b1b;
+  --color-surface-container-highest: #1a1e29;
+  --color-tertiary-fixed-dim: #1a1e29;
+  --color-secondary-fixed: #01c38e;
+  --color-tertiary: #01c38e;
+  --color-on-primary-container: #1a1e29;
+  --color-on-secondary: #1a1e29;
+  --color-tertiary-container: #132d46;
+  --color-on-tertiary-container: #9ca3af;
+  --color-secondary-container: #132d46;
+  --color-primary-container: #132d46;
+  --color-surface-bright: #132d46;
+  --color-on-surface: #ffffff; /* White text for dark mode */
+  --color-inverse-on-surface: #1a1e29;
+  --color-surface-container-high: #132d46;
+  --color-primary-fixed: #01c38e;
+  --color-error: #ef4444;
+  --color-surface: #132d46;
+  --color-surface-tint: #01c38e;
+  --color-on-secondary-fixed: #1a1e29;
+  --color-on-primary-fixed-variant: #1a1e29;
+  --color-on-background: #ffffff;
+  --color-on-tertiary: #1a1e29;
+  --color-on-primary-fixed: #1a1e29;
+  --color-outline: #223c52; /* Sborg soft border */
+  --color-inverse-surface: #ffffff;
+  --color-outline-variant: #1a1e29;
+  --color-primary-fixed-dim: #01c38e;
+  --color-on-primary: #1a1e29;
+  --color-on-surface-variant: #9ca3af; /* Light gray text */
+  --color-on-secondary-fixed-variant: #1a1e29;
+
+  --spacing-margin-mobile: 20px;
+  --spacing-sm: 16px;
+  --spacing-max-width: 1280px;
+  --spacing-gutter: 24px;
+  --spacing-base: 4px;
+  --spacing-lg: 48px;
+  --spacing-xl: 80px;
+  --spacing-xs: 8px;
+  --spacing-md: 24px;
+
+  --font-headline-lg: var(--font-outfit), var(--font-plus-jakarta-sans);
+  --font-headline-lg-mobile: var(--font-outfit), var(--font-plus-jakarta-sans);
+  --font-body-lg: var(--font-plus-jakarta-sans);
+  --font-body-md: var(--font-plus-jakarta-sans);
+  --font-headline-md: var(--font-outfit), var(--font-plus-jakarta-sans);
+  --font-label-sm: var(--font-outfit), var(--font-plus-jakarta-sans);
+  --font-headline-xl: var(--font-outfit), var(--font-plus-jakarta-sans);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+@utility text-headline-xl {
+  font-size: 48px;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  font-weight: 700;
+}
+@utility text-headline-lg {
+  font-size: 32px;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  font-weight: 600;
+}
+@utility text-headline-lg-mobile {
+  font-size: 28px;
+  line-height: 1.2;
+  font-weight: 600;
+}
+@utility text-body-lg {
+  font-size: 18px;
+  line-height: 1.6;
+  font-weight: 400;
+}
+@utility text-body-md {
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+}
+@utility text-headline-md {
+  font-size: 24px;
+  line-height: 1.3;
+  font-weight: 600;
+}
+@utility text-label-sm {
+  font-size: 14px;
+  line-height: 1;
+  letter-spacing: 0.05em;
+  font-weight: 500;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.flat-no-shadows { box-shadow: none !important; }
+.hero-pattern {
+  mask-image: linear-gradient(to bottom, black 50%, transparent);
+  -webkit-mask-image: linear-gradient(to bottom, black 50%, transparent);
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-plus-jakarta-sans), sans-serif;
+  background-color: var(--color-background-custom);
+  color: var(--color-on-surface);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-outfit), sans-serif;
+  color: var(--color-on-surface);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Glowing Orb Backgrounds (Subtle matching Sborg colors) */
+.orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(120px);
+  z-index: 0;
+  pointer-events: none;
+  animation: float-slow 20s infinite ease-in-out;
+}
+
+@keyframes float-slow {
+  0%, 100% {
+    transform: translate(0, 0) scale(1);
+  }
+  33% {
+    transform: translate(30px, -50px) scale(1.1);
+  }
+  66% {
+    transform: translate(-20px, 20px) scale(0.95);
+  }
+}
+
+.float-card {
+  animation: float-widget 6s infinite ease-in-out;
+}
+
+@keyframes float-widget {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(0.5deg);
+  }
+}
+
+/* Spotlight Effect using solid Sborg green spotlight */
+.card-glow {
+  position: relative;
+  overflow: hidden;
+}
+
+.card-glow::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    300px circle at var(--mx, 0px) var(--my, 0px),
+    rgba(1, 195, 142, 0.05), /* Subtle Mint Green glow spotlight */
+    transparent 80%
+  );
+  z-index: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  opacity: 0;
+}
+
+.card-glow:hover::before {
+  opacity: 1;
+}
+
+/* Infinite Marquee Animation */
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marquee 25s linear infinite;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Glassmorphism utility with Sborg slate background */
+.glass-panel {
+  background: rgba(19, 45, 70, 0.8);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.04);
 }

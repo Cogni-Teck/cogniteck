@@ -1,0 +1,22 @@
+# CogniTeck - Boutique Software Engineering
+
+CogniTeck is an agile software engineering agency of 3 experienced full-stack developers building high-performance custom web applications, SaaS products, and business automation systems.
+
+## Services
+- Landing Pages: High-conversion layouts with direct WhatsApp integrations.
+- Corporate Websites: Professional presentation sites optimized for SEO.
+- Custom Systems: Custom databases, operations management, and business portals.
+- Process Automation: API connections and workflow automation (Make, Zapier, Bots).
+- Custom SaaS: Multi-tenant subscription cloud applications.
+- Support & Care: Continuous WhatsApp support, backups, and cloud monitoring.
+
+## Tech Stack
+- Frontend: Next.js (React), Tailwind CSS
+- Languages: TypeScript, JavaScript
+- Backend & DB: PostgreSQL, Node.js, secure REST APIs
+- Integrations: WhatsApp API, payment gateways (Stripe), local billing (SUNAT)
+
+## Contact & Estimations
+- Official Site: https://cogniteck.com/
+- Project Estimations Form: https://cogniteck.com/#contact
+- Support WhatsApp: +51 989 121 6130
