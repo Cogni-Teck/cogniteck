@@ -242,3 +242,29 @@ html {
   -webkit-backdrop-filter: blur(12px);
   border: 1px solid rgba(0, 0, 0, 0.04);
 }
+
+/* Custom Scrollbar Styles (Chrome, Safari, Edge, Opera) */
+::-webkit-scrollbar {
+  width: 10px; /* Ancho delgado */
+  height: 10px; /* Alto delgado para scroll horizontal */
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-background-custom); /* Fondo dinámico que se adapta al modo claro u oscuro */
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-primary); /* Verde menta Sborg (#01c38e) */
+  border-radius: 9999px; /* Bordes redondeados */
+  border: 3px solid var(--color-background-custom); /* Crea un margen alrededor para que parezca más delgada */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #00b080; /* Tono de verde menta más oscuro al pasar el cursor */
+}
+
+/* Custom Scrollbar Styles (Firefox) */
+html {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-primary) var(--color-background-custom);
+}
