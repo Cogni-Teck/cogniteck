@@ -47,11 +47,24 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link
+          id="google-fonts"
           href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&family=Share+Tech+Mono&display=swap"
           rel="stylesheet"
           media="print"
-          // @ts-ignore
-          onload="this.media='all'"
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function() {
+                var link = document.getElementById('google-fonts');
+                if (link) {
+                  link.addEventListener('load', function() {
+                    link.media = 'all';
+                  });
+                }
+              })();
+            `,
+          }}
         />
         <script
           dangerouslySetInnerHTML={{
