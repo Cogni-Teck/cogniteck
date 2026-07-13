@@ -11,6 +11,28 @@ export const metadata: Metadata = {
     icon: "/logo.jpg",
     apple: "/logo.jpg",
   },
+  openGraph: {
+    title: "CogniTeck | Consultoría de Software y Desarrollo Web",
+    description: "Boutique de desarrollo de software y páginas web a medida. Automatización de procesos y sistemas a medida para optimizar tu negocio.",
+    url: "https://cogniteck.com",
+    siteName: "CogniTeck",
+    images: [
+      {
+        url: "https://cogniteck.com/logo.jpg",
+        width: 800,
+        height: 800,
+        alt: "CogniTeck Logo",
+      },
+    ],
+    locale: "es_PE",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "CogniTeck | Consultoría de Software y Desarrollo Web",
+    description: "Boutique de desarrollo de software y páginas web a medida. Automatización de procesos y sistemas a medida para optimizar tu negocio.",
+    images: ["https://cogniteck.com/logo.jpg"],
+  },
 };
 
 export default function RootLayout({
