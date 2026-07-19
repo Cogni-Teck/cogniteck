@@ -1,60 +1,25 @@
-'use client';
+import CogniteckMark from './CogniteckMark';
 
 export default function Footer() {
   return (
-    <footer className="w-full bg-surface-container-low border-t border-outline/80">
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-lg max-w-max-width mx-auto py-xl px-margin-mobile md:px-gutter">
-        {/* Brand info */}
-        <div className="flex flex-col gap-md">
-          <div className="flex items-center gap-xs">
-            <img
-              src="/logo.jpg"
-              alt="Cogniteck Logo"
-              className="w-8 h-8 rounded-full object-cover border border-outline"
-            />
-            <span className="text-headline-md font-extrabold text-on-surface font-sans tracking-tight">
-              Cogniteck
-            </span>
-          </div>
-          <p className="text-body-md text-on-surface-variant font-sans leading-relaxed">
-            Software y páginas web a medida para pequeños negocios, profesionales y emprendedores.
-          </p>
-        </div>
-
-        {/* Links */}
-        <div className="flex flex-col gap-sm">
-          <p className="text-label-sm uppercase tracking-wider text-on-surface-variant font-bold font-sans">
-            Navegación
-          </p>
-          <nav className="flex flex-col gap-xs font-sans">
-            <a
-              className="text-body-md text-on-surface-variant hover:text-primary transition-colors duration-200"
-              href="#how-we-work"
-            >
-              Cómo trabajamos
-            </a>
-            <a
-              className="text-body-md text-on-surface-variant hover:text-primary transition-colors duration-200"
-              href="#services"
-            >
-              Nuestros servicios
-            </a>
-            <a
-              className="text-body-md text-on-surface-variant hover:text-primary transition-colors duration-200"
-              href="#who-we-are"
-            >
-              Quiénes somos
-            </a>
-          </nav>
-        </div>
-
-        {/* Copyright info */}
-        <div className="flex flex-col justify-end items-start md:items-end">
-          <p className="text-body-md text-on-surface-variant font-sans text-left md:text-right leading-relaxed">
-            © {new Date().getFullYear()} Cogniteck.<br />
-            Soluciones prácticas para negocios reales.
-          </p>
-        </div>
+    <footer
+      style={{
+        padding: '36px 56px',
+        background: '#17172A',
+        borderTop: '1px solid #2A2A3D',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'space-between',
+        flexWrap: 'wrap',
+        gap: 16,
+      }}
+    >
+      <div style={{ display: 'flex', alignItems: 'center', gap: 9 }}>
+        <CogniteckMark size={19} fillColor="#fff" />
+        <span style={{ font: "700 14px 'Instrument Sans', sans-serif", color: '#fff' }}>cogniteck</span>
+      </div>
+      <div style={{ font: "400 12px 'Inter', sans-serif", color: '#7A7A93' }}>
+        © {new Date().getFullYear()} cogniteck. Casa de soluciones de software.
       </div>
     </footer>
   );

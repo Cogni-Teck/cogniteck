@@ -1,8 +1,8 @@
 import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
-import Values from '@/components/Values';
-import Services from '@/components/Services';
-import Projects from '@/components/Projects';
+import BrandSystem from '@/components/BrandSystem';
+import Solutions from '@/components/Solutions';
+import HowWeWork from '@/components/HowWeWork';
 import About from '@/components/About';
 import Cta from '@/components/Cta';
 import Footer from '@/components/Footer';
@@ -11,11 +11,11 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <main className="pt-20">
+      <main>
         <Hero />
-        {/* <Projects /> */}
-        <Values />
-        <Services />
+        <BrandSystem />
+        <Solutions />
+        <HowWeWork />
         <About />
         <Cta />
       </main>
