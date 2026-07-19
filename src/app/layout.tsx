@@ -8,8 +8,8 @@ export const metadata: Metadata = {
     canonical: "https://cogniteck.com",
   },
   icons: {
-    icon: "/logo.jpg",
-    apple: "/logo.jpg",
+    icon: "/favicon.ico",
+    apple: "/favicon.ico",
   },
   openGraph: {
     title: "cogniteck | Casa de soluciones de software",
